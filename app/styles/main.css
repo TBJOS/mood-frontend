@@ -14,10 +14,9 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
-  border: 1px solid #fff;
+
 }
 
 
@@ -29,11 +28,12 @@ html,
 body {
   height: 100%;
   background-color: #2980B9;
+  font-family: Arial;
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
 }
 
 .estresado {
@@ -96,8 +96,7 @@ border: 1px solid #fff;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -169,7 +168,8 @@ border: 1px solid #fff;
 }
 .cover .btn-lg {
   padding: 10px 20px;
-  font-weight: bold;
+  font-weight: normal;
+  color: #2980B9;
 }
 .opciones {float:left;
   text-align: left;
