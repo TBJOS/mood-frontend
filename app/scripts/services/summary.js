@@ -20,7 +20,7 @@ angular.module('moodFrontendApp')
 
       ////////////////////////////////
       function today(cb){
-          var url = 'http://192.168.1.113:3000/moods/today';
+          var url = 'http://chile-mobile.demotbj.com/moods/today';
           var req = $http.get(url);
           req.then(function(result){
               var sum = result.data;
@@ -32,7 +32,7 @@ angular.module('moodFrontendApp')
       }
 
       function yesterday(cb){
-          var url = 'http://192.168.1.113:3000/moods/yesterday';
+          var url = 'http://chile-mobile.demotbj.com/moods/yesterday';
           var req = $http.get(url);
           req.then(function(result){
               var sum = result.data;
@@ -44,7 +44,7 @@ angular.module('moodFrontendApp')
       }
 
       function month(cb){
-          var url = 'http://192.168.1.113:3000/moods/thismonth';
+          var url = 'http://chile-mobile.demotbj.com/moods/thismonth';
           var req = $http.get(url);
           req.then(function(result){
               var sum = result.data;
