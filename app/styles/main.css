@@ -15,8 +15,14 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
+  background-color:#2980B9;
+  color:#fff;
+}
 
+h1 {
+font-size:25px; 
+font-family: 'Open Sans', sans-serif;
+font-weight: regular;
 }
 
 
@@ -28,7 +34,13 @@ html,
 body {
   height: 100%;
   background-color: #2980B9;
-  font-family: Arial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0,0;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: ;
+
 }
 body {
   color: #fff;
@@ -87,7 +99,8 @@ margin-top: 25%;
 }
 
 .estadis{
-border: 1px solid #fff;
+background-color:#358BBA;
+border-radius:10px;
 
 }
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -125,22 +138,28 @@ border: 1px solid #fff;
   display: inline-block;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: regular;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
+  background-color:#3792C4;
+  padding: 8px;
+  border-radius: 5px;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
   border-bottom-color: #a9a9a9;
   border-bottom-color: rgba(255,255,255,.25);
+  background-color:#3792C4;
+  padding: 8px;
+  border-radius: 5px;
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -167,13 +186,15 @@ border: 1px solid #fff;
   padding: 0 20px;
 }
 .cover .btn-lg {
-  padding: 10px 20px;
+  padding:6px 13px;
   font-weight: normal;
-  color: #2980B9;
+  color: #fff;
 }
 .opciones {float:left;
   text-align: left;
  margin-left: 4px;}
+
+ .btn-lg, .btn-group-lg > .btn {border-radius: 5px;}
 
 /*
  * Footer
@@ -218,4 +239,6 @@ border: 1px solid #fff;
     width: 700px;
   }
 }
+
+
 /* CSS Document */
