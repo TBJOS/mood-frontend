@@ -19,6 +19,15 @@ a:hover {
   color:#fff;
 }
 
+.enviar a {
+	background-color: transparent;
+	border:1px solid #fff;
+	color:#fff;}
+
+.enviar a:hover {
+	background-color: transparent;
+	border:1px solid #f2f2f2;
+	color:#f2f2f2;}
 h1 {
 font-size:25px; 
 font-family: 'Open Sans', sans-serif;
@@ -50,22 +59,22 @@ body {
 
 .path-why-4 {
   height: 100%;
-  background-color: #629923;
+  background-color: #1c435d;
 }
 
 .path-why-3 {
   height: 100%;
-  background-color:#293A49;
+  background-color:#5786a4;
 }
 
 .path-why-2 {
   height: 100%;
-  background-color:#368981;
+  background-color:#68afde;
 }
 
 .path-why-1 {
   height: 100%;
-  background-color:#F4B019;
+  background-color:#85c1e8;
 }
  /*emoticon*/
 .estresado_img {
@@ -154,10 +163,10 @@ border-radius:10px;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: transparent;
+  background-color: none;
   border-bottom-color: #a9a9a9;
   border-bottom-color: rgba(255,255,255,.25);
-  background-color:#3792C4;
+  background-color:transparent;
   padding: 8px;
   border-radius: 5px;
 }
