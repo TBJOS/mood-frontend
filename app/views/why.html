@@ -91,9 +91,12 @@
       <div class="opciones">
       <br/>
           <p> Si quieres contarnos más acerca de como te sientes, adelante: </p>
-          <textarea class="form-control" rows="3"></textarea>
+          <textarea class="form-control" ng-model ="why.formData.comment" rows="3"></textarea>
           <br/>
-          <button type="submit" class="btn btn-lg btn-default">Enviar</button>
+          <p class="info" ng-show="why.inProgress && !why.error">Enviando datos</p>
+          <p class="error" ng-show="why.error">Ocurrio un problema intenta nuevamente</p>
+          <button type="submit" class="btn btn-lg btn-default" ng-disabled="why.inProgress">Enviar</button>
+
       </div>
   </div>
 </form>

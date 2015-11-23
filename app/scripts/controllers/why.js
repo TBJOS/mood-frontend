@@ -8,11 +8,11 @@
  * Controller of the moodFrontendApp
  */
 angular.module('moodFrontendApp')
-  .controller('WhyCtrl', function ($routeParams, $scope, $http) {
+  .controller('WhyCtrl', function ($routeParams, $scope, $http, $location) {
       var vm = this;
       vm.moodid = $routeParams.id;
       vm.submit = submit;
-      console.log(vm.moodid);
+      vm.inProgress = false;
       vm.formData = {
         moodid: vm.moodid
       };
@@ -21,17 +21,23 @@ angular.module('moodFrontendApp')
       function submit(form){
         console.log('datos!', vm.formData);
         var data = {
-            moodid:1,
-            options:[1,2,3,4],
-            comment:"hola"
+            moodid: vm.moodid,
+            options: [],
+            comment: vm.formData.comment
         };
+        for(var i=1; i<16; i++){
+            if (vm.formData.because[i]) {
+                data.options.push(i);
+            }
+        }
+
         var url = 'http://chile-mobile.demotbj.com/moods';
+        vm.inProgress = true;
         var req = $http.post(url, data);
         req.then(function(result){
-            console.log('EXITO!',result);
+            $location.path('/exit');
         }, function(err){
-            console.log('PROBLEMAS!',err);
+            vm.error = true;
         });
-        //Location a : #/exit
       }
   });
