@@ -10,93 +10,93 @@
         </nav>
     </div>
 </div>
-<div class="inner cover espacio" ng-switch ="why.fellingId">
-    <!-- CONTENTO -->
-    <div ng-switch-when="1">
-        <h1 class="cover-heading"></h1>
-        <img src="images/contento.png" class="img-responsive center-block" alt="Responsive image">
-        <p class="lead">Ya que  nos enteramos de que te encuentras contento(a), queremos saber más.</p>
-        <div class="opciones">
-          <p><label class="checkbox-inline">
-          <input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">El trabajo estuvo excelente hoy.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Pude lograr mis objetivos.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Me sentí valorado por mi equipo de trabajo.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Recibí felicitaciones.
-          </label></p>
-        </div>
-    </div>
 
-    <!-- MOTIVADO -->
-    <div ng-switch-when="2">
-        <h1 class="cover-heading"></h1>
-        <img src="images/contento.png" class="img-responsive center-block" alt="Responsive image">
-        <p class="lead">Ya que  nos enteramos de que te encuentras motivado(a),
-queremos saber más.</p>
-        <div class="opciones">
-          <p><label class="checkbox-inline">
-          <input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">Hoy me propusieron un buen desafío.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Me encuentro en un curso en el cual me capacitaré de algo que me gusta. .
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Estoy trabajando en lo que me gusta.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Me gusta trabajar en equipo.
-          </label></p>
-        </div>
-    </div>
+<form name="whyForm" ng-submit="why.submit()">
+  <div class="inner cover espacio" ng-switch ="why.moodid">
+      <!-- CONTENTO -->
+      <div ng-switch-when="1">
+          <h1 class="cover-heading"></h1>
+          <img src="images/contento.png" class="img-responsive center-block" alt="Responsive image">
+          <p class="lead">Ya que  nos enteramos de que te encuentras contento(a), queremos saber más.</p>
+          <div class="opciones">
+            <p><label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[1]">El trabajo estuvo excelente hoy.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[2]">&nbsp;Pude lograr mis objetivos.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[3]">&nbsp;Me sentí valorado por mi equipo de trabajo.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[4]">&nbsp;Recibí felicitaciones.
+            </label></p>
+          </div>
+      </div>
 
-    <!-- DESANIMADO -->
-    <div ng-switch-when="3">
-        <h1 class="cover-heading"></h1>
-        <img src="images/desanimado.png" class="img-responsive center-block" alt="Responsive image">
-        <p class="lead">Ya que  nos enteramos de que te encuentras desanimado(a),
-queremos saber más.</p>
-        <div class="opciones">
-          <p><label class="checkbox-inline">
-          <input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">Me encuentro demasiado cansado.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;El ambiente dentro de mi equipo no es el adecuado para trabajar.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Tuve una discusión que se pudo haber evitado.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Por problemas personales.
-          </label></p>
-        </div>
-    </div>
+      <!-- MOTIVADO -->
+      <div ng-switch-when="2">
+          <h1 class="cover-heading"></h1>
+          <img src="images/contento.png" class="img-responsive center-block" alt="Responsive image">
+          <p class="lead">Ya que  nos enteramos de que te encuentras motivado(a),
+  queremos saber más.</p>
+          <div class="opciones">
+            <p><label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[5]">Hoy me propusieron un buen desafío.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[6]">&nbsp;Me encuentro en un curso en el cual me capacitaré de algo que me gusta. .
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[7]">&nbsp;Estoy trabajando en lo que me gusta.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[8]">&nbsp;Me gusta trabajar en equipo.
+            </label></p>
+          </div>
+      </div>
 
-    <!-- ESTRESADO -->
-    <div ng-switch-when="4">
-        <h1 class="cover-heading"></h1>
-        <img src="images/estresado.png" class="img-responsive center-block" alt="Responsive image">
-        <p class="lead">Ya que  nos enteramos de que te encuentras estresado(a),
-nos gustaría saber a qué se debe.</p>
-        <div class="opciones">
-          <p><label class="checkbox-inline">
-          <input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">El trabajo estuvo demasiado arduo.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;No tuve las condiciones necesarias para llevar a cabo mis labores.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Tuve una discusión que se pudo haber evitado.
-          </label></p>
-          <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones">&nbsp;Me faltó tiempo.
-          </label></p>
-        </div>
-    </div>
+      <!-- DESANIMADO -->
+      <div ng-switch-when="3">
+          <h1 class="cover-heading"></h1>
+          <img src="images/desanimado.png" class="img-responsive center-block" alt="Responsive image">
+          <p class="lead">Ya que  nos enteramos de que te encuentras desanimado(a),
+  queremos saber más.</p>
+          <div class="opciones">
+            <p><label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[9]">Me encuentro demasiado cansado.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[10]">&nbsp;El ambiente dentro de mi equipo no es el adecuado para trabajar.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[11]">&nbsp;Tuve una discusión que se pudo haber evitado.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[12]">&nbsp;Por problemas personales.
+            </label></p>
+          </div>
+      </div>
 
-    <div class="opciones">
-    <br/>
-        <p> Si quieres contarnos más acerca de como te sientes, adelante: </p>
-        <textarea class="form-control" rows="3"></textarea>
-        <br/>
-        <a href="#/exit" class="btn btn-default">Enviar</a>
-    </div>
+      <!-- ESTRESADO -->
+      <div ng-switch-when="4">
+          <h1 class="cover-heading"></h1>
+          <img src="images/estresado.png" class="img-responsive center-block" alt="Responsive image">
+          <p class="lead">Ya que  nos enteramos de que te encuentras estresado(a),
+  nos gustaría saber a qué se debe.</p>
+          <div class="opciones">
+            <p><label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[13]">El trabajo estuvo demasiado arduo.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" class="opciones" ng-model="why.formData.because[14]">&nbsp;No tuve las condiciones necesarias para llevar a cabo mis labores.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones" ng-model="why.formData.because[15]">&nbsp;Tuve una discusión que se pudo haber evitado.
+            </label></p>
+            <p><input type="checkbox" id="inlineCheckbox1" value="option1" class="opciones" ng-model="why.formData.because[16]">&nbsp;Me faltó tiempo.
+            </label></p>
+          </div>
+      </div>
 
-
-</div>
-
+      <div class="opciones">
+      <br/>
+          <p> Si quieres contarnos más acerca de como te sientes, adelante: </p>
+          <textarea class="form-control" rows="3"></textarea>
+          <br/>
+          <button type="submit" class="btn btn-default">Enviar</button>
+      </div>
+  </div>
+</form>
 <div class="mastfoot espacio">
     <div class="inner">
       <p></p>

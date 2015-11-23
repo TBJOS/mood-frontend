@@ -36,22 +36,22 @@ body {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-.estresado {
+.path-why-4 {
   height: 100%;
   background-color: #629923;
 }
 
-.desanimado {
+.path-why-3 {
   height: 100%;
   background-color:#293A49;
 }
 
-.motivado {
+.path-why-2 {
   height: 100%;
   background-color:#368981;
 }
 
-.contento {
+.path-why-1 {
   height: 100%;
   background-color:#F4B019;
 }
