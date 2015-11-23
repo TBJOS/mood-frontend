@@ -15,7 +15,8 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color:#2980B9;
+  background-color:transparent;
+  border:1px solid #fff;
   color:#fff;
 }
 
@@ -59,22 +60,22 @@ body {
 
 .path-why-4 {
   height: 100%;
-  background-color: #1c435d;
+  background-color:#94BA65;
 }
 
 .path-why-3 {
   height: 100%;
-  background-color:#5786a4;
+  background-color:#a53684;
 }
 
 .path-why-2 {
   height: 100%;
-  background-color:#68afde;
+  background-color:#FCD723;
 }
 
 .path-why-1 {
   height: 100%;
-  background-color:#85c1e8;
+  background-color:#F58723;
 }
  /*emoticon*/
 .estresado_img {
