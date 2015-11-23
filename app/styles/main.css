@@ -61,6 +61,47 @@ body {
 .img_resultado2 { max-width:30%;}
 .img_resultado_principal {max-width:100%px;}
 
+
+.path-exit-4 {
+  height: 100%;
+  background-color:#94BA65;
+}
+
+.path-exit-3 {
+  height: 100%;
+  background-color:#5db897;
+}
+
+.path-exit-2 {
+  height: 100%;
+  background-color:#ca72a9;
+}
+
+.path-exit-1 {
+  height: 100%;
+  background-color:#F58723;
+}
+
+.path-home-4 {
+  height: 100%;
+  background-color:#94BA65;
+}
+
+.path-home-3 {
+  height: 100%;
+  background-color:#5db897;
+}
+
+.path-home-2 {
+  height: 100%;
+  background-color:#ca72a9;
+}
+
+.path-home-1 {
+  height: 100%;
+  background-color:#F58723;
+}
+ 
 .path-why-4 {
   height: 100%;
   background-color:#94BA65;
@@ -80,6 +121,7 @@ body {
   height: 100%;
   background-color:#F58723;
 }
+
  /*emoticon*/
 .estresado_img {
   height: 100%;
