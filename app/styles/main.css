@@ -144,11 +144,11 @@ border-radius:10px;
   padding-right: 0;
   padding-left: 0;
   font-size: 13px;
-  font-weight: regular;
+  font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
-  background-color:#3792C4;
+  background-color:transparent;
   padding: 8px;
   border-radius: 5px;
 }
