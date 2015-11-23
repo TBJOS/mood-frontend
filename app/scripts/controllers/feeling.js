@@ -9,9 +9,5 @@
  */
 angular.module('moodFrontendApp')
   .controller('FeelingCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    var vm = this;
   });
