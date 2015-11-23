@@ -58,8 +58,8 @@ body {
 
 }
 
-.img_resultado2 { width:100%;}
-.img_resultado_principal {width:20%px;}
+.img_resultado2 { max-width:100%;}
+.img_resultado_principal {max-width:30%px;}
 
 .path-why-4 {
   height: 100%;
