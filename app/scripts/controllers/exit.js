@@ -8,9 +8,14 @@
  * Controller of the moodFrontendApp
  */
 angular.module('moodFrontendApp')
-  .controller('ExitCtrl', function ($location, $timeout) {
+  .controller('ExitCtrl', function ($location, $timeout, $routeParams) {
       var vm = this;
+      vm.id = $routeParams.id;
       $timeout(function(){
-          $location.path('/home/1');
-      }, 1000);
+          if (vm.id != 0) {
+            $location.path('/home/' + vm.id);
+        } else {
+            $location.path('/home/');
+        }
+      }, 2000);
   });

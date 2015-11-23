@@ -39,7 +39,7 @@ angular
         controller: 'WhyCtrl',
         controllerAs: 'why'
       })
-      .when('/exit', {
+      .when('/exit/:id', {
         templateUrl: 'views/exit.html',
         controller: 'ExitCtrl',
         controllerAs: 'exit'

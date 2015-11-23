@@ -13,17 +13,36 @@ angular.module('moodFrontendApp')
     vm.mainClass = '';
     vm.showSuccessMsj = false;
     vm.success = ($routeParams.success)? true: false;
+    vm.groupMood = $routeParams.success;
+    vm.summaryFeelling = 0;
     //Catalogo parche
     vm.moods = [];
     vm.moods[1] = "Contento";
     vm.moods[2] = "Motivado";
     vm.moods[3] = "Desanimado";
     vm.moods[4] = "Estresado";
-    
-    vm.summaryYesterday = {};
+
+    vm.summaryToday = [];
+    vm.summaryYesterday = [];
+    vm.summaryMonth = [];
+
+    if (vm.groupMood != 0) {
+        summary.todayById(vm.groupMood, function(sum){
+            console.log('BYID:',sum);
+            vm.summaryFeelling = sum;
+        });
+    }
+
+    summary.today(function(sum){
+        vm.summaryToday = sum;
+    });
+
     summary.yesterday(function(sum){
-        console.log('sum:',sum);
         vm.summaryYesterday = sum;
+    });
+
+    summary.month(function(sum){
+        vm.summaryMonth = sum;
     });
 
     ////////////////////////////

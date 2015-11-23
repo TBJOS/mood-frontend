@@ -11,28 +11,59 @@ angular.module('moodFrontendApp')
   .service('summary', function ($http) {
       var service = {
           today: today,
-          yesterday: yesterday
+          yesterday: yesterday,
+          month: month,
+          todayById: todayById
       };
 
       return service;
 
       ////////////////////////////////
       function today(cb){
-        console.log('today!');
-        cb({})
-      }
-
-      function yesterday(cb){
-          var url = 'http://chile-mobile.demotbj.com/moods/yesterday';
+          var url = 'http://192.168.1.113:3000/moods/today';
           var req = $http.get(url);
           req.then(function(result){
-              console.log('result', result);
               var sum = result.data;
               sum = order(sum);
               cb(sum);
           }, function(err){
               console.log('error:', err)
           })
+      }
+
+      function yesterday(cb){
+          var url = 'http://192.168.1.113:3000/moods/yesterday';
+          var req = $http.get(url);
+          req.then(function(result){
+              var sum = result.data;
+              sum = order(sum);
+              cb(sum);
+          }, function(err){
+              console.log('error:', err)
+          })
+      }
+
+      function month(cb){
+          var url = 'http://192.168.1.113:3000/moods/thismonth';
+          var req = $http.get(url);
+          req.then(function(result){
+              var sum = result.data;
+              sum = order(sum);
+              cb(sum);
+          }, function(err){
+              console.log('error:', err)
+          })
+      }
+
+      function todayById(id, cb) {
+          today(function(sum){
+            for(var i in sum){
+                console.log('sum[i]', sum[i]);
+                if (sum[i].id == id) {
+                    cb(sum[i].percent);
+                }
+            }
+          });
       }
 
       function order(sum){

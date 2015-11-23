@@ -31,11 +31,11 @@ angular.module('moodFrontendApp')
             }
         }
 
-        var url = 'http://chile-mobile.demotbj.com/moods';
+        var url = 'http://192.168.1.113:3000/moods';
         vm.inProgress = true;
         var req = $http.post(url, data);
         req.then(function(result){
-            $location.path('/exit');
+            $location.path('/exit/' + vm.moodid);
         }, function(err){
             vm.error = true;
         });
