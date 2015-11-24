@@ -21,7 +21,7 @@
 
         <div>
             <br/><br/><br/>
-            <div class="estadis" ng-if="main.summaryYesterday.length > 0">
+          <!--  <div class="estadis" ng-if="main.summaryYesterday.length > 0">
                 <div class="col-md-8"> <img ng-src="images/mood-{{main.summaryToday[0].id}}.png" class="img-responsive center-block img_resultado_principal" alt="Responsive image">
                     <p>Hoy el {{main.summaryToday[0].percent}}% de la empresa <br/>está {{main.moods[main.summaryToday[0].id]}}</p>
                 </div>
@@ -33,7 +33,7 @@
                         <p>Este mes el {{main.summaryMonth[0].percent}}% de la empresa <br/>estuvo {{main.moods[main.summaryMonth[0].id]}}</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
 
             <h1 class="cover-heading">Hola, bienvenido:</h1>
@@ -52,13 +52,26 @@
         <div>
             <br/><br/>
                 <div>
-                    <div > <img ng-src="images/mood-{{main.groupMood}}.png" class="img-responsive center-block" alt="Responsive image">
-                        <p>Hoy eres parte del {{main.summaryFeelling}}% que <br/>se encuentra {{main.moods[main.groupMood]}}.</p>
-                    </div>
+                    <p class="lead">Gracias por contarnos como te encuentras. ¿Quieres volver a ingresar un nuevo estado?, pincha <a href="#/felling" style="font-weight:bold;">aquí</a></p>
 
-                </div>
+               </div>
                 <br/>
-                <p class="lead">Gracias por contarnos como te encuentras. ¿Quieres volver a ingresar un nuevo estado?, pincha <a href="#/felling" style="font-weight:bold;">aquí</a></p>
+
+                 <div > <img ng-src="images/mood-{{main.groupMood}}-final.png" class="img-responsive center-block" alt="Responsive image">
+                    <p>Hoy eres parte del {{main.summaryFeelling}}% que <br/>se encuentra {{main.moods[main.groupMood]}}.</p>
+                    </div>
+                       <div class="row">
+                         <div class="col-md-4">
+                         <img ng-src="images/mood-{{main.summaryToday[0].id}}.png" class="img-responsive center-block img_resultado2" alt="Responsive image">
+                         <p>Hoy el {{main.summaryToday[0].percent}}% de la empresa <br/>está {{main.moods[main.summaryToday[0].id]}}</p>
+                           <img ng-src="images/mood-{{main.summaryYesterday[0].id}}.png"  class="img-responsive center-block img_resultado2" alt="Responsive image">
+                          <p>Ayer el {{main.summaryYesterday[0].percent}}% de la empresa <br/>estuvo {{main.moods[main.summaryYesterday[0].id]}}</p>
+                          <img ng-src="images/mood-{{main.summaryMonth[0].id}}.png"  class="img-responsive center-block img_resultado2" alt="Responsive image">
+                         <p>Este mes el {{main.summaryMonth[0].percent}}% de la empresa <br/>estuvo {{main.moods[main.summaryMonth[0].id]}}</p>
+                    </div>
+                </div>
+            </div>
+                
 
         </div>
     </div>
