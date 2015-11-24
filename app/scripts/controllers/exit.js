@@ -17,5 +17,5 @@ angular.module('moodFrontendApp')
         } else {
             $location.path('/home/');
         }
-      }, 2000);
+    }, 3000);
   });
