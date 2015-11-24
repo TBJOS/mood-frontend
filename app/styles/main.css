@@ -64,62 +64,62 @@ body {
 
 
 .path-exit-4 {
-  height: 100%;
+  height: auto;
   background-color:#94BA65 !important;
 }
 
 .path-exit-3 {
-  height: 100%;
+  height: auto;
   background-color:#5db897;
 }
 
 .path-exit-2 {
-  height: 100%;
+  height: auto;
   background-color:#ca72a9;
 }
 
 .path-exit-1 {
-  height: 100%;
+  height: auto;
   background-color:#ef9a48;
 }
 
 .path-home-4 {
-  height: 100%;
+  height: auto;
   background-color:#94BA65;
 }
 
 .path-home-3 {
-  height: 100%;
+  height: auto;
   background-color:#5db897;
 }
 
 .path-home-2 {
-  height: 100%;
+  height: auto;
   background-color:#ca72a9;
 }
 
 .path-home-1 {
-  height: 100%;
+  height: auto;
   background-color:#ef9a48;
 }
 
 .path-why-4 {
-  height: 100%;
+  height: auto;
   background-color:#94BA65;
 }
 
 .path-why-3 {
-  height: 100%;
+  height: auto;
   background-color:#5db897;
 }
 
 .path-why-2 {
-  height: 100%;
+  height: auto;
   background-color:#ca72a9;
 }
 
 .path-why-1 {
-  height: 100%;
+  height: auto;
   background-color:#ef9a48;
 }
 
@@ -296,11 +296,12 @@ border-radius:10px;
   }
 }
 
-@media (min-width: 480px) {
-    body, .path-why-4{
-        background-color: #94BA65 !important;
+/*@media (min-width: 480px) {
+    html, body {
+        height: 100%;
+        background-color: #94BA65;
     }
-}
+}*/
 
 
 
