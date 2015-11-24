@@ -51,13 +51,13 @@ body {
   background-position: 0,0;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: ;
-
-}
-body {
   color: #fff;
   text-align: center;
-
 }
+/*body {
+
+
+}*/
 
 .img_resultado2 { max-width:30%;}
 .img_resultado_principal {max-width:100%px;}
@@ -65,7 +65,7 @@ body {
 
 .path-exit-4 {
   height: 100%;
-  background-color:#94BA65;
+  background-color:#94BA65 !important;
 }
 
 .path-exit-3 {
@@ -295,6 +295,14 @@ border-radius:10px;
     width: 700px;
   }
 }
+
+@media (min-width: 480px) {
+    body, .path-why-4{
+        background-color: #94BA65 !important;
+    }
+}
+
+
 
 /* CSS Document */
 
