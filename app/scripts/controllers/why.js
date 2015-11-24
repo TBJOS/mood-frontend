@@ -26,7 +26,7 @@ angular.module('moodFrontendApp')
             comment: vm.formData.comment
         };
         for(var i=1; i<16; i++){
-            if (vm.formData.because[i]) {
+            if (vm.formData.because > 0 && vm.formData.because[i]) {
                 data.options.push(i);
             }
         }
