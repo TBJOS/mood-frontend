@@ -21,10 +21,11 @@
 
         <div>
             <br/><br/><br/>
-          <!--  <div class="estadis" ng-if="main.summaryYesterday.length > 0">
+            <!--<div class="estadis" ng-if="main.summaryYesterday.length > 0">
+
                 <div class="col-md-8"> <img ng-src="images/mood-{{main.summaryToday[0].id}}.png" class="img-responsive center-block img_resultado_principal" alt="Responsive image">
                     <p>Hoy el {{main.summaryToday[0].percent}}% de la empresa <br/>está {{main.moods[main.summaryToday[0].id]}}</p>
-                </div>
+                </div>                
                 <div class="row">
                     <div class="col-md-4">
                         <img ng-src="images/mood-{{main.summaryYesterday[0].id}}.png"  class="img-responsive center-block img_resultado2" alt="Responsive image">
@@ -47,7 +48,8 @@
 
 
     <!-- ENCUESTA CONTESTADA -->
-    <div ng-show="main.success">
+    
+    <div ng-show="main.success"> 
 
         <div>
             <br/><br/>
@@ -56,12 +58,13 @@
 
                </div>
                 <br/>
-
-                 <div > <img ng-src="images/mood-{{main.groupMood}}-final.png" class="img-responsive center-block" alt="Responsive image">
-                    <p>Hoy eres parte del {{main.summaryFeelling}}% que <br/>se encuentra {{main.moods[main.groupMood]}}.</p>
+            
+            <div class="row">
+                    <div class="col-md-8"><img ng-src="images/mood-{{main.groupMood}}-final.png" class="img-responsive center-block" alt="Responsive image">
+                         <p>Hoy eres parte del {{main.summaryFeelling}}% que <br/>se encuentra {{main.moods[main.groupMood]}}.</p>
                     </div>
-                       <div class="row">
-                         <div class="col-md-4">
+                      
+                    <div class="col-md-4">
                          <img ng-src="images/mood-{{main.summaryToday[0].id}}.png" class="img-responsive center-block img_resultado2" alt="Responsive image">
                          <p>Hoy el {{main.summaryToday[0].percent}}% de la empresa <br/>está {{main.moods[main.summaryToday[0].id]}}</p>
                            <img ng-src="images/mood-{{main.summaryYesterday[0].id}}.png"  class="img-responsive center-block img_resultado2" alt="Responsive image">
@@ -70,11 +73,8 @@
                          <p>Este mes el {{main.summaryMonth[0].percent}}% de la empresa <br/>estuvo {{main.moods[main.summaryMonth[0].id]}}</p>
                     </div>
                 </div>
-            </div>
-                
-
-        </div>
-    </div>
+              
+    </div> <!--cierra main.success-->
 <br/>
      <div class="mastfoot">
         <div class="inner">
